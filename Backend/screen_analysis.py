@@ -40,7 +40,7 @@ def listen_for_command():
     
     # Use the microphone to listen to commands
     with sr.Microphone() as source:
-        print("\n🎤 Say 'Adele, analyze screen' to trigger AI... (Waiting for command)")
+        print("\n🎤 Say 'LUNA, analyze screen' to trigger AI... (Waiting for command)")
         
         # Adjust for ambient noise to avoid incorrect recognition
         recognizer.adjust_for_ambient_noise(source, duration=1)
@@ -66,7 +66,7 @@ def listen_for_command():
 
 def analyze_once():
     """Analyzes the screen once and returns to the main program.
-    This is a non-blocking version for integration with Adele."""
+    This is a non-blocking version for integration with LUNA."""
     print("\n[📸] Capturing screen...")
     image = capture_screen()
 

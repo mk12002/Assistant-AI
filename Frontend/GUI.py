@@ -341,7 +341,7 @@ class CustomTopBar(QWidget):
         line_frame.setFrameShape(QFrame.HLine)
         line_frame.setFrameShadow(QFrame.Sunken)
         line_frame.setStyleSheet("border-color: black;")
-        title_label = QLabel(f"Mr AI")
+        title_label = QLabel(f"LUNA")
         title_label.setStyleSheet("color: black; font-size: 18px;; background-color: white")
         home_button.clicked.connect(lambda: self.stacked_widget.setCurrentIndex(0))
         message_button.clicked.connect(lambda: self.stacked_widget.setCurrentIndex(1))
