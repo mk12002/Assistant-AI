@@ -22,7 +22,7 @@ def analyze_screen(image):
 
 def analyze_once():
     """Analyzes a single frame from the webcam and returns the analysis.
-    This is a non-blocking version for integration with Momo."""
+    This is a non-blocking version for integration with Adele."""
     print("\n[📸] Capturing webcam frame...")
     
     cap = cv2.VideoCapture(0)  # Start webcam

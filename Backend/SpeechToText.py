@@ -7,8 +7,6 @@ from dotenv import dotenv_values
 import os
 import mtranslate as mt
 
-
-
 env_vars = dotenv_values(".env")
 
 InputLanguage = env_vars.get("InputLanguage")
@@ -63,7 +61,7 @@ Link = f"{current_dir}/Data/Voice.html"
 
 
 chrome_options = Options()
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.142.86 Safari/537.36"
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.95 Safari/537.36"
 chrome_options.add_argument(f"user-agent={user_agent}")
 chrome_options.add_argument("--use-fake-ui-for-media-stream")
 chrome_options.add_argument("--use-fake-device-for-media-stream")
@@ -71,7 +69,8 @@ chrome_options.add_argument("--headless=new")
 
 
 service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service, options=chrome_options)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+
 
 
 TempDirPath = rf"{current_dir}/Frontend/Files"
