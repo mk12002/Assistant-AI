@@ -102,7 +102,7 @@ class ChatSection(QWidget):
         self.chat_text_edit.setCurrentCharFormat(text_color_text)
         self.gif_label = QLabel()
         self.gif_label.setStyleSheet("border: none;")
-        movie = QMovie(GraphicsDirectoryPath("Jarvis.gif"))
+        movie = QMovie(GraphicsDirectoryPath("logo.gif"))
         max_gif_size_W = 480
         max_gif_size_H = 270
         movie.setScaledSize(QSize(max_gif_size_W, max_gif_size_H))
@@ -228,7 +228,7 @@ class InitialScreen(QWidget):
         content_layout = QVBoxLayout()
         content_layout.setContentsMargins(0, 0, 0, 0)
         gif_label = QLabel()
-        movie = QMovie(GraphicsDirectoryPath("Jarvis.gif"))
+        movie = QMovie(GraphicsDirectoryPath("logo.gif"))
         gif_label.setMovie(movie)
         max_gif_size_H = int(screen_width / 16 * 9)
         movie.setScaledSize(QSize(screen_width, max_gif_size_H))
