@@ -90,25 +90,6 @@ python Main.py
 - "Generate an image of a cyberpunk city"
 - "Analyze my screen"
 
-## 🔧 Project Structure
-```
-LUNA-AI/
-├── Main.py
-├── Requirements.txt
-├── Frontend/
-│   ├── GUI.py
-│   └── Graphics/
-├── Backend/
-│   ├── Chatbot.py
-│   ├── Model.py
-│   ├── SpeechToText.py
-│   ├── TextToSpeech.py
-│   ├── RealtimeSearchEngine.py
-│   ├── Automation.py
-│   ├── ImageGeneration.py
-│   └── screen_analysis.py
-└── Data/
-```
 
 ## 🌐 Impact & Significance
 LUNA is more than a project—it’s a step toward frictionless, human-centric AI integration. It showcases:
